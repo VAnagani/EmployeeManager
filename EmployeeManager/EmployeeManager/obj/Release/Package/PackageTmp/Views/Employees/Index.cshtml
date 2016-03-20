@@ -1,0 +1,249 @@
+﻿@model IEnumerable<EmployeeManager.Models.Employee>
+
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+
+<p>
+    @Html.ActionLink("New Employee", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.Grade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LocationType)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.EmployeeType)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Designation)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfJoin)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.PreviousExperience)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassportNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Visa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessGroup)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CostCenter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Practice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MasterSkillSet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrimarySkills)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondarySkills)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResourceStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReservationStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AssignmentStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Supervisor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectManager)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Utilization)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsServicingNoticePeriod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsTravelReady)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RelievingDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangedBy)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.MiddleName)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Grade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LocationType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>*@
+        @*<td>
+            @Html.DisplayFor(modelItem => item.EmployeeType)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Designation)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfJoin)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.PreviousExperience)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassportNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Visa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessGroup)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CostCenter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Practice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MasterSkillSet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimarySkills)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondarySkills)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResourceStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReservationStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AssignmentStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Supervisor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectManager)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Utilization)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsServicingNoticePeriod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsTravelReady)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsActive)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RelievingDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangedBy)
+        </td>*@
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EmployeeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EmployeeId })
+        </td>
+    </tr>
+}
+
+</table>

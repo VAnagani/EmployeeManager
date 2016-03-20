@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=bmdb.database.windows.net;Initial Catalog=localDB;user id=rootuser;password=Passw0rd;MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\venka\\onedrive\\documents\\visual\ studio\ 2015\\Projects\\EmployeeManager\\EmployeeManager\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="localDBEntities-Web.config Connection String" description="localDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.EmployeeModel.csdl|res://*/Models.EmployeeModel.ssdl|res://*/Models.EmployeeModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=bmdb.database.windows.net;initial catalog=localDB;user id=rootuser;password=Passw0rd;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\venka\\onedrive\\documents\\visual\ studio\ 2015\\Projects\\EmployeeManager\\EmployeeManager\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='localDBEntities']/@connectionString" />
+  </parameter>
+</parameters>
